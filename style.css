@@ -320,7 +320,6 @@ div i {
 div i:hover {
     transform: scale(1.2);
     color: #f68223;
-    /* Можна змінити на бажаний колір */
 }
 
 .phone-icon,
