@@ -262,9 +262,10 @@ div>h3 {
     color: #f64a23;
 }
 
-p::first-line {
+h4 {
     color: rgb(231, 85, 12);
     text-transform: uppercase;
+    padding: 5px;
 }
 
 .news,
@@ -272,7 +273,7 @@ p::first-line {
     flex: 1;
     border: rgb(231, 85, 12) solid 1px;
     margin: 10px;
-    padding: 40px;
+    padding: 30px;
 }
 
 footer {
@@ -312,9 +313,8 @@ footer>div>ul>li {
 }
 
 div i {
-    font-size: 24px;
+    font-size: 20px;
     margin: 10px;
-    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 div i:hover {
@@ -327,4 +327,98 @@ div i:hover {
 .email-icon,
 .viber-icon:hover {
     cursor: pointer;
+}
+
+@media (max-width: 1170px) {
+    header {
+        height: auto;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .header-logo {
+        height: 70px;
+        width: 70px;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        display: flex;
+        padding: 0;
+        gap: 5px;
+    }
+
+    nav>a {
+        width: 95px;
+        font-size: 16px;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    #switch1:checked~.arrows label:nth-child(4),
+    #switch2:checked~.arrows label:nth-child(1),
+    #switch3:checked~.arrows label:nth-child(2),
+    #switch4:checked~.arrows label:nth-child(3) {
+        background: url("./image/prev.png") center/cover no-repeat;
+        float: left;
+        margin: 0 0 0 10px;
+        display: block;
+    }
+
+    #switch1:checked~.arrows label:nth-child(2),
+    #switch2:checked~.arrows label:nth-child(3),
+    #switch3:checked~.arrows label:nth-child(4),
+    #switch4:checked~.arrows label:nth-child(1) {
+        background: url("./image/next.png") no-repeat center/cover;
+        float: right;
+        margin: 0 10px 0 0;
+        display: block;
+    }
+
+    .dots {
+        margin: 10% 0 0;
+        text-align: center;
+    }
+
+    .container {
+        display: block;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer>div {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    footer>div>div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer>div>ul {
+        padding: 0;
+    }
+
+    footer>div>ul>li {
+        margin: 5px 0;
+    }
+
+    .icon-container {
+        display: inline;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .icon-container a {
+        text-decoration: none;
+        font-size: 24px;
+    }
+
 }
