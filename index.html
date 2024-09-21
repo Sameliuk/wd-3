@@ -11,9 +11,7 @@
 
 <body>
     <header>
-        <div class="header-logo">
-
-        </div>
+        <div class="header-logo"></div>
         <nav>
             <a>
                 Меню
@@ -25,6 +23,22 @@
                 Обліковий запис
             </a>
         </nav>
+        <label for="main-menu-checker" class="main-menu-button"></label>
+        <input type="checkbox" id="main-menu-checker" />
+        <div class="mobile-main-menu-container">
+            <label for="main-menu-checker" class="mobile-main-menu-filler"></label>
+            <div class="mobile-main-menu">
+                <a class="menu-item">
+                    Меню
+                </a>
+                <a class="menu-item">
+                    Рецепти
+                </a>
+                <a class="menu-item">
+                    Обліковий запис
+                </a>
+            </div>
+        </div>
     </header>
     <main class="main-hght main-mrgn">
         <div class="slider">
@@ -59,12 +73,9 @@
                 <label for="switch4"></label>
             </div>
         </div>
-        <div class="lds-heart">
-            <div></div>
-        </div>
         <div class="container">
             <div class="news">
-                <h3>News</h3>
+                <h3>Новини</h3>
                 <p>
                 <h4>1. Осінній сезон: ТОП-5 рецептів з гарбуза</h4>
                 З приходом осені гарбуз стає головною зіркою на кухні! Ми підготували для вас п'ять найсмачніших
@@ -90,7 +101,7 @@
                 </p>
             </div>
             <div class="project">
-                <h3>About the project</h3>
+                <h3>Про наш проект</h3>
                 <p>
                 <h4>1. Наш кулінарний проєкт: Об'єднуємо смаки світу на одній платформі</h4>
                 Наш проєкт — це більше, ніж просто кулінарний сайт. Ми створили простір, де кожен може знайти
@@ -114,6 +125,13 @@
                 </p>
             </div>
         </div>
+
+        <div class="button-container">
+            <button>
+                Почати куховарити
+            </button>
+        </div>
+
     </main>
     <footer class="main-mrgn">
         <div>
@@ -148,16 +166,16 @@
         </div>
         <div class="icon-container">
             <a href="tel:+0123456789" class="phone-icon">
-                <i class="fa-solid fa-phone"></i>
+                <span class="fa-solid fa-phone fa-lg"></span>
             </a>
-            <a href="https://t.me/yourusername" class="telegram-icon" target="_blank">
-                <i class="fa-brands fa-telegram"></i>
+            <a href="https://t.me/fice_time" class="telegram-icon" target="_blank">
+                <span class="fa-brands fa-telegram fa-lg"></span>
             </a>
             <a href="mailto:youremail@example.com" class="email-icon">
-                <i class="fa-sharp fa-regular fa-envelope"></i>
+                <span class="fa-sharp fa-regular fa-envelope fa-lg"></span>
             </a>
             <a href="viber://chat?number=%2B0123456789" class="viber-icon" target="_blank">
-                <i class="fa-brands fa-viber"></i>
+                <span class="fa-brands fa-viber fa-lg"></span>
             </a>
         </div>
     </footer>
